@@ -11,9 +11,9 @@
             <th scope="col-5">Umur</th>
           </tr>
         </thead>
-        <tbody v-for="user in member" :key="user.id">
+        <tbody v-for="(user, index) in member" :key="user.id">
           <tr>
-            <th>{{user.id}}</th>
+            <th>{{index+1}}</th>
             <td>{{user.nama}}</td>
             <td>{{user.email}}</td>
           </tr>
